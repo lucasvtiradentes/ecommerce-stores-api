@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: FAQ - Frequently answered questions
+    url: https://github.com/ts-boilerplate-land/boilermanager/blob/master/docs/FAQ.MD
+    about: Please, check if your question has not already been answered here before open a question issue.

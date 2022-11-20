@@ -1,0 +1,17 @@
+name: "👌 Other issue"
+description: Create a new ticket for something else.
+title: "👌 [OTHER] - <change here>"
+labels: [
+  "no-code-related"
+]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: Please enter an explicit description of your issue
+      placeholder: |
+        ex: Short and explicit description of your incident...
+        ![DESCRIPTION](https://www.techslang.com/wp-content/uploads/2021/08/9359-e1629798707656.jpg)
+    validations:
+      required: true

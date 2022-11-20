@@ -1,0 +1,31 @@
+name: "💡 Feature Request"
+description: Create a new ticket for a new feature request
+title: "💡 [FEATURE] - <change here>"
+labels: [
+  "feature"
+]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      description: Provide a brief explanation of the feature
+      placeholder: Describe in a few lines your feature request
+    validations:
+      required: true
+  - type: textarea
+    id: drawbacks
+    attributes:
+      label: "Drawbacks"
+      description: What are the drawbacks/impacts of your feature request ?
+      placeholder: Identify the drawbacks and impacts while being neutral on your feature request
+    validations:
+      required: true
+  - type: input
+    id: start_date
+    attributes:
+      label: "Implementation PR"
+      description: "Pull request used"
+      placeholder: "#Pull Request ID"
+    validations:
+      required: false

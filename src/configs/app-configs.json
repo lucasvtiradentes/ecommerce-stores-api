@@ -1,0 +1,53 @@
+{
+
+  "project_configs": {
+    "appname": "ecom-api",
+    "source_folder": "./src",
+    "dist_folder": "./build"
+  },
+
+  "server_configs": {
+    "should_start": true,
+    "job_wait_seconds": 30,
+    "default_port": 3000,
+    "development_port": 4000
+  },
+
+  "queue_configs": {
+    "should_start": true,
+    "max_jobs_per_worker": 30,
+    "queue_name": "worker"
+  },
+
+  "database_configs": {
+    "should_start": true,
+    "database_wpp": "whatsapp-api",
+    "database_general": "im-general",
+    "collection_variables": "variables"
+  },
+
+  "bots_configs": [
+    {
+      "name": "GEN BOT",
+      "active": true,
+      "options": {
+        "headless": true,
+        "heroku_bot": true,
+        "aliexpress_bot": true,
+        "controlle_bot": true
+      }
+    },
+    {
+      "name": "WPP BOT",
+      "active": false,
+      "options": {
+        "headless": true,
+        "sheet_checking_sec_loop": 120
+      }
+    },
+    {
+      "name": "TEL BOT",
+      "active": true
+    }
+  ]
+}
