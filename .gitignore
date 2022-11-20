@@ -1,0 +1,9 @@
+## FOLDERS ##########################
+node_modules/
+build/
+
+## FILES ############################
+.env
+package-lock.json
+pnpm-lock.yaml
+
